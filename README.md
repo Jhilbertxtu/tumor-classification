@@ -1,5 +1,5 @@
 # Tumor Classification
-Random forest classifier achieves 96% accuracy on diagnosis from [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data)
+Random forest classifier achieves 96% accuracy on diagnosis from [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).
 
 ## Data
 Data is taken from the [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).
