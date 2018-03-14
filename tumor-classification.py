@@ -8,6 +8,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+"""
+creates random forest classifier to classify tumors from
+breast cancer (wisconsin) data set as malignant or benign
+
+input arguments:
+none
+
+return values:
+none
+"""
 def main():
 	# reading data
 	data = pd.read_csv("data.csv", header=0)
