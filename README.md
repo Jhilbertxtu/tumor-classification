@@ -25,12 +25,13 @@ malignant classified as malignant:	59
   malignant       0.97      0.94      0.95        63
 
 avg / total       0.96      0.96      0.96       171
+
 ~~~~
 
 ## Results
 This classifier assumes the true prevalence of malignant tumors is approximately equal to the sample prevalence of malignant tumors (37%).   70% of the Breast Cancer Wisconsin (Diagnostic) data were used for training and 30% was used for testing.
 
-Only 6 features `texture\_mean`, `perimeter\_mean`, `smoothness\_mean`, `compactness\_mean`, `symmetry\_mean`, `fractal\_dimension\_mean` were used to predict tumor diagnosis.  These features were chosen as they have a low correlation in the [correlation heatmap](https://github.com/SeanCooke/tumor-classification/blob/master/correlation-heatmap.png).
+Only 6 features `texture_mean`, `perimeter_mean`, `smoothness_mean`, `compactness_mean`, `symmetry_mean`, and `fractal_dimension_mean` were used to predict tumor diagnosis.  These features were chosen as they have a low correlation in the [correlation heatmap](https://github.com/SeanCooke/tumor-classification/blob/master/correlation-heatmap.png).
 
 A random forest classifier correctly classifies the test data 96% of the time.  In tumor classification, it is important to minimize the number of malignant tumors classified as benign tumors.  Our classifier has a false negative rate of 3%.
 
