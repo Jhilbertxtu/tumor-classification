@@ -1,5 +1,5 @@
 # Tumor Classification
-Random forest classifier achieves 96% accuracy on diagnosis from [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).  Built for Python 2.7, pandas 0.22.0,  matplotlib 2.1.1, sklearn 0.19.1, and seaborn 0.8.1.
+Random forest classifier achieves 96% accuracy on diagnosis from [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).  Built for Python 2.7, pandas 0.22.0,  matplotlib 2.1.1, scikit-learn 0.19.1, and seaborn 0.8.1.
 
 ## Data
 Data is taken from the [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).
