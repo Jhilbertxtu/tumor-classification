@@ -17,6 +17,7 @@ def main():
 	data.rename(columns={"diagnosis": "is_malignant"}, inplace=True)
 	corr = data[features_mean].corr()
 	sns.set(font_scale=0.45)
+	# correlation heatmap
 	sns.heatmap(corr, cbar=True, square=True, annot=True, fmt='.2f', xticklabels=features_mean, yticklabels=features_mean, cmap='coolwarm')
 	plt.show()
 	# only predict with columns with a low correlation
