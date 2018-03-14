@@ -2,7 +2,7 @@
 Random forest classifier achieves 96% accuracy on diagnosis from [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data)
 
 ## Data
-Data is taken from the [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).  and tutorial was used as a starting point
+Data is taken from the [Breast Cancer (Wisconsin) Data Set](https://www.kaggle.com/gargmanish/basic-machine-learning-with-cancer/data).
 
 ## Example
 `$ python tumor-classification.py`
@@ -27,7 +27,7 @@ malignant classified as malignant:	59
 avg / total       0.96      0.96      0.96       171
 ~~~~
 
-## Summary
+## Results
 This classifier assumes the true prevalence of malignant tumors is approximately equal to the sample prevalence of malignant tumors (37%).   70% of the Breast Cancer Wisconsin (Diagnostic) data were used for training and 30% was used for testing.  A random forest classifier correctly classifies the test data 96% of the time.  In tumor classification, it is important to minimize the number of malignant tumors classified as benign tumors.  Our classifier has a false negative rate of 3%.
 
 ## References
