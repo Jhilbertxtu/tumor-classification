@@ -46,10 +46,6 @@ def main():
 	print "malignant classified as malignant:\t"+str(tp)
 	# classification report
 	print "\n"+metrics.classification_report(test_y, prediction, target_names=["benign", "malignant"])
-	false_negative_rate = fp/(tp+fp)
-	# summary
-	print "Summary:"
-	print "This classifier assumes the true prevalence of malignant tumors is approximately equal to the sample prevalence of malignant tumors ("+str("%d" % round(probability_malignant*100.0))+"%).   70% of the Breast Cancer Wisconsin (Diagnostic) data were used for training and 30% was used for testing.  A random forest classifier correctly classifies the test data "+str("%d" % round(accuracy_score*100.0))+"% of the time.  In tumor classification, it is important to minimize the number of malignant tumors classified as benign tumors.  Our classifier has a false negative rate of "+str("%d" % round(false_negative_rate*100.0))+"%."
 
 if __name__ == "__main__":
 	main()
