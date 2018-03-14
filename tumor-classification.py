@@ -30,7 +30,7 @@ def main():
 	probability_benign = 1 - probability_malignant
 	print "Percentage of training data that is benign:\t"+str(round(probability_benign, 2))
 	print "Percentage of training data that is malignant:\t"+str(round(probability_malignant, 2))
-	# random forest classifier
+	# fitting random forest classifier
 	model = RandomForestClassifier(n_estimators=100, random_state=42)
 	model.fit(train_X, train_y)
 	prediction = model.predict(test_X)
