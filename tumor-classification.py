@@ -9,24 +9,27 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def main():
+	# reading data
 	data = pd.read_csv("data.csv", header=0)
 	# features_mean will hold all mean columns
 	features_mean =	list(data.columns[3:13])
 	# binarizing diagnosis: malignant: 1, benign: 0
 	data["diagnosis"] = data["diagnosis"].map({"M":1, "B":0})
 	data.rename(columns={"diagnosis": "is_malignant"}, inplace=True)
+	# correlation heatmap
 	corr = data[features_mean].corr()
 	sns.set(font_scale=0.45)
-	# correlation heatmap
 	sns.heatmap(corr, cbar=True, square=True, annot=True, fmt='.2f', xticklabels=features_mean, yticklabels=features_mean, cmap='coolwarm')
 	plt.show()
 	# only predict with columns with a low correlation
 	prediction_columns = ["texture_mean", "perimeter_mean", "smoothness_mean", "compactness_mean", "symmetry_mean", "fractal_dimension_mean"]
+	# splitting dataset
 	train, test = train_test_split(data, test_size = 0.3, random_state=42)
 	train_X = train[prediction_columns]
 	train_y = train.is_malignant
 	test_X = test[prediction_columns]
 	test_y = test.is_malignant
+	# prevalences
 	probability_malignant = sum(train_y) / len(train_y)
 	probability_benign = 1 - probability_malignant
 	print "Percentage of training data that is benign:\t"+str(round(probability_benign, 2))
